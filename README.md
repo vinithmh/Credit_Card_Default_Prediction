@@ -47,11 +47,8 @@ Before using the application, ensure you have the following prerequisites instal
 
 ### Installation
 
-1. Clone this repository:
-
-
-git clone https://github.com/your-username/credit-approval-prediction.git
-cd credit-approval-prediction
+1. Clone this repository: git clone https://github.com/your-username/credit-approval-prediction.git
+   cd credit-approval-prediction
 
 2. Navigate to the project directory:
    cd your-repo-name
@@ -60,25 +57,9 @@ cd credit-approval-prediction
    pip install -r requirements.txt 
 
 ## Usage
-1. Prepare your job descriptions in a CSV file (job_descriptions.csv) with a column named job_description.
+1. Run the Streamlit app: streamlit run app.py
 
-2. Organize your candidate CVs in a folder (candidate_cvs) containing PDF files. The PDFs should include job role, skills, and education sections.
+2. Access the app in your web browser by visiting the URL displayed in the terminal (usually something like http://localhost:8501).
 
-3. Update the paths and configuration in config.py according to your file structure.
-
-4. Run the main script:
-   python main.py
-
-5. The script will calculate rankings, find and export top candidates, and print the top candidates for each job description.
-
-## Customization
-- You can adjust the DistilBERT model and tokenizer in distilBert_embeddings.py to fine-tune the embeddings based on your requirements.
-- Modify the PDF text extraction and preprocessing functions in pdf_extract_utils.py and preprocessing_utils.py to suit your specific needs.
-
-## Credits and Acknowledgments
-We extend our gratitude to the following individuals, libraries, and tools that have been instrumental in the development of the Job Matching System:
-
-- John Doe for their valuable feedback and suggestions.
-- The Hugging Face Transformers library for its powerful pretrained models.
-- The NLTK library for efficient text preprocessing.
+3. Fill out the credit application form and click the "Predict Credit Approval" button to receive a prediction.
 
