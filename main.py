@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 
 # Load your saved LightGBM model
-loaded_model = pickle.load(open('D:/Machine_learning/Credit Card Default Prediction/final_LGBM_model.sav', 'rb'))
+loaded_model = pickle.load(open('final_LGBM_model.sav', 'rb'))
 
 # Define your prediction function
 def predict_credit_approval(credit_limit, gender, age, education, marital_status, bill_amounts, payment_amounts, payment_status):
